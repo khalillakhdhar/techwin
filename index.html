@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>
+ma premiere paga web
+
+</title>
+<style>
+table
+{
+    width: 30%;
+}
+h1
+{color: blue;}
+td
+{
+    text-align: center;
+}
+.inpt
+{
+width: 100%;
+height: 30px;
+
+}
+#bt
+{
+width: 50%;
+height: 35;
+
+}
+.rounded 
+{
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+</style>
+
+</head>
+<body>
+    <form>
+<table align="center">
+    <tr><td colspan="2"><h1>Demande de stage</h1></td></tr>
+<tr><td>Nom</td><td><input type="text" class="inpt rounded" pattern="[A-Za-z ]{3,20}" title="le nom ne peut pas contenir des chiffres" name="nom" required></td></tr>
+<tr><td>Prenom</td><td><input type="text" class="inpt" name="prenom" pattern="[A-Za-z ]{3,20}" required></td></tr>
+<tr><td>Adresse</td><td><textarea name="adr" class="inpt" required></textarea></td></tr>
+<tr><td>date de naissance:</td><td><input class="inpt" type="date" name="date" required></td></tr>
+<tr><td>code postale</td><td><input type="text" class="inpt" pattern="[0-9]{4}" required maxlength="4" name="code"></td></tr>
+<tr><td>bac+?</td><td><select class="inpt"><option>N.D</option><option>1</option><option>2</option><option>3</option><option>4</option><option>+5</option></select></td></tr>
+<tr><td>Redoublement:</td><td><input type="radio" name="r">OUI<br><input type="radio" name="r">Non</td></tr>
+<tr><td>Email:</td><td><input required type="email" class="inpt" name="email"></td></tr>
+<tr><td>Mot de passe:</td><td><input required type="password" class="inpt" name="password"></td></tr>
+<tr><td>LinkedIn</td><td><input type="url" class="inpt" name="link"></td></tr>
+<tr><td>Type de stage cherché</td><td><input  class="inpt" placeholder="ouvrier/ingénieure" type="text" name="nom"></td></tr>
+<tr><td><input type="submit" id="bt" value="envoyer"></td><td><input id="bt" type="reset" value="vider"></td></tr>
+
+
+
+</table>
+
+</form>
+
+</body>
+
+
+
+</html>
